@@ -9,6 +9,8 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import DeeCaresHeader from "./components/header";
+import DeeCaresFooter from "./components/footer";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -33,9 +35,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        {/* Header & Nav Bar */}
+        <DeeCaresHeader />
         {children}
         <ScrollRestoration />
         <Scripts />
+        <DeeCaresFooter />
       </body>
     </html>
   );

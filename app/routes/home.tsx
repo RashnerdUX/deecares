@@ -1,13 +1,20 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import HeroSection from "~/components/homepage/hero-section";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Home | DeeCares Foundation" },
+    { name: "description", content: "Welcome to DeeCares Foundation. A non profit dedicated to providing essential care for the elderly" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <main className="pt-20">
+        {/* Hero Section */}
+        <HeroSection />
+      </main>
+    </>
+  );
 }
