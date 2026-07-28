@@ -1,12 +1,10 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router"
-import { useNavigate } from "react-router"
 import { LuMenu } from 'react-icons/lu'
 
 const Navbar = () => {
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false)
-    const navigate = useNavigate()
 
     const openMobileMenu = () => {
         setIsMobileMenuOpen(true)
@@ -22,7 +20,9 @@ const Navbar = () => {
             <nav className="w-full max-w-300">
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center justify-between">
-                    <Link to="/" className="text-headline-md font-headline-md font-bold text-primary"> Deecares Foundation </Link>
+                    <Link to="/">
+                        <img src="/logo/deecares-logo.svg" alt="The logo for DeeCares Foundation. Leads you to the homepage" className="h-40 w-auto"/>
+                    </Link>
                     <div className="flex gap-8 items-center">
                         <NavLink to={"/"} className="navlink">Our Programs</NavLink>
                         <NavLink to={"/"} className="navlink">Impact</NavLink>
@@ -37,7 +37,9 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
                 <div className="md:hidden flex justify-between items-center">
-                    <div className="text-2xl font-bold" onClick={() => navigate('/')}>Deecares</div>
+                    <Link to={"/"} className="text-2xl">
+                        <img src="/logo/deecarea-icon-logo.svg" alt="The Icon for DeeCares logo"/>
+                    </Link>
                     <button type='button' onClick={openMobileMenu}>
                         <LuMenu size={24} />
                     </button>
