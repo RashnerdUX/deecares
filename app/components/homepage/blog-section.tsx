@@ -1,4 +1,4 @@
-import { MdOutlineCircle } from "react-icons/md";
+import { MdOutlinePlayCircleFilled } from "react-icons/md";
 
 
 const topBlogPosts: BlogCardProps[] = [
@@ -73,7 +73,11 @@ const BlogCard = ({imageUrl, title, altText, category, date, previewText}: BlogC
             <div className="rounded-lg overflow-hidden h-60 mb-6">
                 <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt={altText} src={imageUrl}/>
             </div>
-            <span className="text-secondary-container font-sm uppercase tracking-widest">{category}<MdOutlineCircle size={8}/>{date}</span>
+            <div className="text-secondary-container font-sm uppercase tracking-widest flex gap-1 items-center">
+                <span>{category}</span>
+                <MdOutlinePlayCircleFilled size={8}/>
+                <span>{date}</span>
+            </div>
             <h3 className="font-semibold text-primary text-2xl mt-2 group-hover:text-secondary-container transition-colors">{title}</h3>
             <p className="font-normal text-foreground/70 mt-4 line-clamp-2 text-ellipsis">{previewText}</p>
         </article>
