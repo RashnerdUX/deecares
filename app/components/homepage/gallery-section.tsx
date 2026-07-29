@@ -1,5 +1,28 @@
 import { MdOutlineGridView } from "react-icons/md";
 
+const topImages: GalleryImageProps[] = [
+    {
+        imageUrl: "https://vsrcjtowcixvisnzlzyv.supabase.co/storage/v1/object/public/outreach-images/30-05-2026/DSC_0104.jpg",
+        altText: "The members of Deecares test out the Blood Sugar machine"
+    },
+        {
+        imageUrl: "https://vsrcjtowcixvisnzlzyv.supabase.co/storage/v1/object/public/outreach-images/30-05-2026/DSC_0124.jpg",
+        altText: "The team members from Deecares"
+    },
+    {
+        imageUrl: "https://vsrcjtowcixvisnzlzyv.supabase.co/storage/v1/object/public/outreach-images/30-05-2026/DSC_0127.jpg",
+        altText: "Four elderly people are pictured on a chair along with members of DeeCares foundation in the background"
+    },
+    {
+        imageUrl: "https://vsrcjtowcixvisnzlzyv.supabase.co/storage/v1/object/public/outreach-images/30-05-2026/DSC_0134.jpg",
+        altText: "A team member from DeeCares gives a riveting talk to the Elderly people in attendance"
+    },
+    {
+        imageUrl: "https://vsrcjtowcixvisnzlzyv.supabase.co/storage/v1/object/public/outreach-images/30-05-2026/DSC_0183.jpg",
+        altText: "An elderly man gets his blood pressure checked by a team member from DeeCares"
+    },
+]
+
 const GallerySection = () => {
 
     return (
@@ -15,7 +38,12 @@ const GallerySection = () => {
                     </div>
                     {/* A grid of images */}
                     <div className="columns-1 md:columns-3 gap-6 space-y-6">
-                        
+                        {topImages.map((image) => {
+                            return <SmallGalleryImage
+                                imageUrl={image.imageUrl}
+                                altText={image.altText}
+                            />
+                        })}
                     </div>
                 </div>
             </section>
