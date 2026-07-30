@@ -68,7 +68,7 @@ const Navbar = () => {
                         ))}
                     </div>
                     <div className="px-8">
-                        <button className="pill-button bg-primary text-primary-foreground px-6 py-3 font-label-lg text-label-lg scale-95 transition-transform duration-150 active:scale-90"> Donate Now</button>
+                        <button className="pill-button bg-primary text-primary-foreground px-6 py-3 font-medium text-base lg:text-lg scale-95 transition-transform duration-150 active:scale-90"> Donate Now</button>
                     </div>
                 </div>
 
@@ -85,7 +85,7 @@ const Navbar = () => {
                 {/* Mobile Navigation */}
                 {isMobileMenuOpen && (
                     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm bg-opacity-50 z-50">
-                        <div className="bg-surface max-w-full min-h-screen p-6 relative flex flex-col justify-between">
+                        <div className="bg-surface max-w-full min-h-full p-6 relative flex flex-col justify-between">
                             {/* Cancel button row */}
                             <div className="flex justify-end items-center">
                                 <button type="button" onClick={closeMobileMenu}><MdOutlineClose size={32} /></button>
