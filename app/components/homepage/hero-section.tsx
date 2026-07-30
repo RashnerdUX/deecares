@@ -1,15 +1,15 @@
-import { MdOutlineFavorite, MdOutlineStar } from "react-icons/md";
+import { MdOutlineFavorite, MdOutlineStarBorder } from "react-icons/md";
 
 const HeroSection = () => {
 
     return (
         <>
-            <section className="relative min-h-217.5 flex items-center overflow-hidden bg-surface">
-                <div className="max-w-300 mx-auto px-6 grid md:grid-cols-2 gap-12 items-center z-10 py-section">
+            <section className="relative min-h-217.5 flex items-center overflow-hidden bg-surface" id="hero-section">
+                <div className="max-w-300 mx-auto px-6 grid md:grid-cols-2 gap-12 items-center z-10 py-24">
                     {/* First grid for Hero text */}
                     <div className="space-y-8">
-                        <span className="inline-block px-4 py-1.5 bg-secondary-container text-secondary-container-foreground font-label-md rounded-full">EST. 2026 • NIGERIA</span>
-                        <h1 className="font-bold text-[64px] leading-tight text-primary">Empowering Aging with <span className="text-secondary-container">Dignity and Joy</span></h1>
+                        <span className="inline-block px-4 py-1.5 bg-secondary-container text-secondary-container-foreground font-semibold text-sm md:text-lg rounded-full">EST. 2026 • NIGERIA</span>
+                        <h1 className="font-bold text-[48px] md:text-[64px] leading-tight text-primary">Empowering Aging with <span className="text-secondary-container">Dignity and Joy</span></h1>
                         <p className="font-normal text-lg text-foreground/70 max-w-lg">At DeeCares Foundation, we bridge the gap in elderly care through community health programs, social advocacy, and holistic support for the golden generation.</p>
                         {/* Hero section buttons */}
                         <div className="flex flex-wrap gap-4 pt-4">
@@ -31,9 +31,9 @@ const HeroSection = () => {
                         {/* Pulse Animation*/}
                         <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-secondary-container rounded-lg -z-10 animate-pulse"></div>
                         {/* Impact overlay image */}
-                        <div className="absolute -top-10 right-0 p-6 bg-surface shadow-xl rounded-lg z-20 max-w-50">
+                        <div className="absolute -top-10 -right-4 p-6 bg-surface shadow-xl rounded-lg z-20 max-w-50">
                             <div className="flex gap-2 items-center mb-2">
-                                <MdOutlineStar size={20}/>
+                                <MdOutlineStarBorder size={20} className="text-yellow-500"/>
                                 <span className="font-normal text-primary">Direct Impact</span>
                             </div>
                             <p className="font-normal text-sm text-foreground/70">Helping seniors live more fulfilled, active lives every single day.</p>

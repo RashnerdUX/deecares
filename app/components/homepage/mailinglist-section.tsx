@@ -2,7 +2,7 @@ const MailingListSection = () => {
 
     return (
         <>
-            <section className="py-24 bg-neutral-background">
+            <section className="py-24 bg-neutral-background" id="mailing-list-subscription-section">
                 <div className="mx-auto max-w-300 px-4 text-center">
                     <div className="p-12 bg-surface rounded-xl shadow-lg border border-outline-variant/20">
                         <h2 className="font-bold text-[48px] text-primary mb-4">Stay Informed</h2>

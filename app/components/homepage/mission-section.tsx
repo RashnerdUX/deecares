@@ -4,7 +4,7 @@ const MissionSection = () => {
 
     return (
         <>
-            <section className="py-24 bg-neutral-background">
+            <section className="py-24 bg-neutral-background" id="mission-section">
                 <div className="grid md:grid-cols-2 gap-20 mx-auto max-w-300 items-center px-4">
                     {/* The images */}
                     <div className="order-2 md:order-1">

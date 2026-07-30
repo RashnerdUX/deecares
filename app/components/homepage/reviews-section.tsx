@@ -21,7 +21,7 @@ const ReviewsSection = () => {
 
     return (
         <>
-            <section className="py-24 bg-neutral-background overflow-hidden">
+            <section className="py-24 bg-neutral-background overflow-hidden" id="reviews-section">
                 <div className="mx-auto max-w-300 px-4">
                     <div className="text-center mb-16">
                         <h1 className="font-bold text-[48px] text-primary"> Voices of Impact </h1>
@@ -29,7 +29,8 @@ const ReviewsSection = () => {
                     </div>
                     <div className="flex flex-col md:flex-row gap-8">
                         {reviews.map((review, index) => {
-                            return <ReviewCard 
+                            return <ReviewCard
+                                key={index} 
                                 first_name={review.first_name}
                                 last_name={review.last_name}
                                 title={review.title}

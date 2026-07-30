@@ -85,10 +85,18 @@ html,body{@apply min-h-screen bg-background text-foreground;scroll-behavior:smoo
 .navlink {
   @apply relative inline-flex items-center font-medium text-foreground transition-colors duration-300 pb-1;
 }
-
+.navlink.active {
+  @apply text-primary;
+}
 .navlink::after {
   content: "";
   @apply absolute left-0 bottom-0 h-1 w-0 bg-primary transition-all duration-300;
+}
+.mobile-navlink {
+  @apply text-foreground/70;
+}
+.mobile-navlink.active {
+  @apply text-primary font-bold;
 }
 
 .navlink:hover::after,

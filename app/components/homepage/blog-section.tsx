@@ -32,15 +32,16 @@ const BlogSection = () => {
 
     return (
         <>
-            <section className="py-24 bg-surface">
+            <section className="py-24 bg-surface" id="blog-section">
                 <div className="mx-auto max-w-300 px-4">
                     <div className="flex justify-between items-center mb-12">
                         <h1 className="font-headline-lg text-headline-lg text-primary"></h1>
                         <a href="/blog" className="pill-button border-2 border-primary text-primary px-6 py-2 font-base"> View Blog</a>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {topBlogPosts.map((blogPost)=> {
+                        {topBlogPosts.map((blogPost, index)=> {
                             return <BlogCard 
+                                key={index}
                                 imageUrl={blogPost.imageUrl}
                                 altText={blogPost.altText}
                                 title={blogPost.title}

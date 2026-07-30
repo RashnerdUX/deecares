@@ -7,7 +7,7 @@ const DeeCaresFooter = () => {
     return (
         <>
             <footer className="footer py-24">
-                <div className="flex flex-col md:flex-row justify-between items-start max-w-300 mx-auto px-gutter w-full gap-12">
+                <div className="flex flex-col md:flex-row justify-between items-start max-w-300 mx-auto px-4 w-full gap-12">
                     {/* The Company details */}
                     <div className="max-w-xs space-y-6">
                         <h2 className="text-headline-md font-headline-md font-bold text-primary-foreground">DeeCares Foundation</h2>
@@ -57,11 +57,11 @@ const DeeCaresFooter = () => {
                         </div>
                     </div>
                 </div>
-                <div className="max-w-300 mx-auto px-gutter mt-20 pt-8 border-t border-on-primary/10 flex flex-col md:flex-row justify-between items-center gap-4 opacity-60 font-label-sm">
-                    <p>© 2026 DeeCares Foundation. Empowering elderly lives in Nigeria.</p>
+                <div className="max-w-300 mx-auto px-4 mt-20 pt-8 border-t border-on-primary/10 flex flex-col md:flex-row justify-between items-center gap-4 opacity-60 font-label-sm">
+                    <p className="text-center md:text-left">© 2026 DeeCares Foundation. Empowering elderly lives in Nigeria.</p>
                     <div className="flex gap-6">
-                    <a className="hover:underline" href="#">Privacy Policy</a>
-                    <a className="hover:underline" href="#">Terms of Service</a>
+                        <a className="hover:underline" href="#">Privacy Policy</a>
+                        <a className="hover:underline" href="#">Terms of Service</a>
                     </div>
                 </div>
             </footer>

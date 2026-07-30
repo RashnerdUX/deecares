@@ -38,8 +38,9 @@ const GallerySection = () => {
                     </div>
                     {/* A grid of images */}
                     <div className="columns-1 md:columns-3 gap-6 space-y-6">
-                        {topImages.map((image) => {
+                        {topImages.map((image, index) => {
                             return <SmallGalleryImage
+                                key={index}
                                 imageUrl={image.imageUrl}
                                 altText={image.altText}
                             />

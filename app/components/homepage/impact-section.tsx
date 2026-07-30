@@ -2,7 +2,7 @@ const ImpactSection = () => {
 
     return (
         <>
-            <section className="py-16 bg-primary text-primary-foreground">
+            <section className="py-16 bg-primary text-primary-foreground" id="impact-section">
                 <div className="mx-auto max-w-300 px-4">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {/* Number of people reached */}

@@ -4,7 +4,7 @@ const ProgramsSection = () => {
 
     return (
         <>
-            <section className="py-24 bg-surface">
+            <section className="py-24 bg-surface" id="programs-section">
                 <div className="mx-auto max-w-300 items-center px-4">
                     {/* The title */}
                     <div className="space-y-4 text-center mb-16">
